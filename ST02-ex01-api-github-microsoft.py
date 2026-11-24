@@ -9,4 +9,9 @@ response = requests.get(url)
 
 # Step 2: Convert the JSON payload to a dictionary
 data = response.json()
-print(data)
+
+
+# Step 3: Consume the payload
+print(
+    f"Name: {data["name"]} Followers: {data["followers"]} Public Repos: {data["public_repos"]}"
+)

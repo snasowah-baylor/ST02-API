@@ -14,7 +14,7 @@ import requests
 # ---------------------------- -
 url = "https://api.weather.gov/gridpoints/FWD/95,68/forecast"
 response = requests.get(url)
-
+print(response)
 
 # -----------------------------
 # Convert the payload to a dict
